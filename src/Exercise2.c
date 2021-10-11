@@ -20,23 +20,19 @@ int main(int argc, char *argv[]) {
 	int result;
 	//Your codes here
 	#include <stdio.h>
-int main(); 
-{
-    int n;
-    int factorial1 = 1; 
-    int factorial2 = 1;
-    printf("Enter the number: ");
-    scanf("%d", &n);
-
-    for(int i = 1; i <= n; i++){
-        if(i%2==0)
-            factorial1 *= i;
-        if(i%2==1)
-            factorial2 *= i;
+int pro; 
+pro=1; 
+    if (n%2==0) {
+        for(int i=2; i<=n; i=i+2)
+        pro=pro*i;
     }
-    printf("Factorial of even: %d\n", factorial1);
-    printf("Factorial of odd: %d", factorial2);
-    return 0;
+else
+{
+    for int(i=1; i<=n; i=i+2)
+    pro=pro*1; 
 }
-	
+result=pro;
+printf("%d",result);
+return 0;
+}
 
