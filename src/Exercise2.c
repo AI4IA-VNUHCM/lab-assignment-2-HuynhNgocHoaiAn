@@ -19,7 +19,24 @@ int main(int argc, char *argv[]) {
 	int n = atoi(argv[1]);
 	int result;
 	//Your codes here
-	
-	printf("%d", result);
-	return 0;
+	#include <stdio.h>
+int main(); 
+{
+    int n;
+    int factorial1 = 1; 
+    int factorial2 = 1;
+    printf("Enter the number: ");
+    scanf("%d", &n);
+
+    for(int i = 1; i <= n; i++){
+        if(i%2==0)
+            factorial1 *= i;
+        if(i%2==1)
+            factorial2 *= i;
+    }
+    printf("Factorial of even: %d\n", factorial1);
+    printf("Factorial of odd: %d", factorial2);
+    return 0;
 }
+	
+
